@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script  src="/scripts/script.js" type="text/javascript"></script>
+    <title>Broker Mosca</title>
+</head>
+
+<body>
+    <div class="broker-page">
+        <h1>Mosca Broker Stress test</h1>
+        <div>
+            <button class="button-21" type="button" onclick="startBroker()">start broker</button>
+        </div>
+        <div class="settings">
+            <form action="" method="POST">
+                    <input class="input-text" type="number" name="nbr_clients" id="nbr_clients" value="value" placeholder="Enter the number of clients(thread)"/>
+                    <input class="input-text" type="number" name="size_payload"  id="size_payload" value="value" placeholder="Enter the size of payload"/>
+                    <input class="input-text" type="number" name="nbr_tests" id="nbr_tests" value="value" placeholder="Enter the number of tests"/>
+                    <input class="input-text" type="number" name="nbr_publisher" id="nbr_publisher" value="value" placeholder="Enter the number of publisher"/>
+                    <input class="input-text" type="number" name="nbr_subscriber" id="nbr_subscriber" value="value" placeholder="Enter the number of subscriber"/>
+                    <input class="input-text" type="number" name="nbr_topic" id="nbr_topic" value="value" placeholder="Enter the number of topic"/>
+                    <input class="input-text" type="number" name="type_qos" id="type_qos" value="value" placeholder="Enter the type Qos(0,1 or 2)"/>
+                    <button class="button-21" type="button" onclick="sendData()">Start your test</button>
+            </form>   
+        </div>
+    </div>
+   
+</body>
+
+</html>
