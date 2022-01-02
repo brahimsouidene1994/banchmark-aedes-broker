@@ -1,6 +1,8 @@
 const express = require("express");
 var cors = require('cors')
+
 const app = express();
+app.set('view engine', 'ejs')
 app.use(cors())
 
 const mqttBroker = require('./mqtt/broker')
